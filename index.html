@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c35">
+<title>LuxuryBid — A smarter way to win</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="demo-banner">DEMO PREVIEW · No real bids or payments are processed</div>
+<header class="site-header">
+  <a class="brand" href="#" aria-label="LuxuryBid home"><span class="brand-mark">E</span><span>Luxury<span class="brand-accent">Bid</span><small>Bid smart. Win fair.</small></span></a>
+  <nav class="desktop-nav"><a href="#auctions">Auctions</a><a href="#how">How it works</a><a href="#trust">Trust & safety</a></nav>
+  <div class="header-actions"><button class="btn btn-quiet" id="loginBtn">Log in</button><button class="btn btn-dark" id="signupBtn">Create account</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="live-dot"></span> A new way to shop in Ethiopia</div>
+    <h1>Big prizes.<br><em>Smarter bids.</em></h1>
+    <p>Discover products, place a unique bid, and follow each auction to its finish. A fresh marketplace concept made for Ethiopia.</p>
+    <div class="hero-actions"><a class="btn btn-lime" href="#auctions">Explore auctions <span>→</span></a><a class="text-link" href="#how">How it works <span>↗</span></a></div>
+    <div class="hero-proof"><div class="avatar-stack"><span>EB</span><span>ET</span><span>+</span></div><span><strong>Built for local shoppers</strong><small>Mobile-first · Prices in ETB</small></span></div>
+  </div>
+  <div class="hero-art">
+    <div class="sun-orb"></div><div class="art-label label-top">YOUR NEXT WIN</div>
+    <div class="product-stage"><div class="stage-shadow"></div><div class="phone-product"><div class="phone-screen"><div class="phone-speaker"></div><div class="phone-camera"></div><div class="phone-wallpaper"></div><div class="phone-camera-box"><i></i><i></i><i></i></div><div class="phone-brand">SMARTPHONE</div></div></div>
+      <div class="floating-tag"><span class="tag-icon">↗</span><span><small>Starting bid</small><strong>ETB 25.00</strong></span></div>
+      <div class="floating-note"><span class="note-star">✳</span><span>Fair rules.<br><strong>Clear results.</strong></span></div>
+    </div><div class="art-label label-bottom">BID WITH PURPOSE</div>
+  </div>
+</section>
+<section class="stats-strip"><div><strong>01</strong><span>Browse live auctions</span></div><div><strong>02</strong><span>Choose your bid</span></div><div><strong>03</strong><span>Follow the result</span></div><div class="stats-note">Simple to explore. Designed for mobile.</div></section>
+<section class="auction-section" id="auctions">
+  <div class="section-heading"><div><div class="eyebrow">THE MARKETPLACE</div><h2>Auctions worth a look.</h2><p>Explore the demo listings below. Live auction rules will be finalized before launch.</p></div><a class="text-link" href="#how">Learn the rules <span>↗</span></a></div>
+  <div class="filter-row"><div class="filter-pills"><button class="filter active" data-filter="all">All items</button><button class="filter" data-filter="tech">Technology</button><button class="filter" data-filter="home">Home & living</button><button class="filter" data-filter="style">Style</button></div><label class="search-box"><span>⌕</span><input id="searchInput" placeholder="Search auctions" aria-label="Search auctions"></label></div>
+  <div class="auction-grid" id="auctionGrid">
+    <article class="auction-card" data-category="tech" data-name="smartphone">
+      <div class="card-image phone-bg"><span class="card-badge">POPULAR</span><div class="mini-phone"><div class="mini-camera"></div></div><button class="heart" aria-label="Save smartphone">♡</button></div>
+      <div class="card-content"><div class="card-category">TECHNOLOGY</div><h3>Smartphone Pro</h3><div class="card-meta"><span>Demo listing</span><span class="status"><i></i> Preview</span></div><div class="card-bottom"><div><small>Example bid range</small><strong>ETB 25–150</strong></div><button class="btn btn-dark bid-btn" data-product="Smartphone Pro">View auction <span>→</span></button></div></div>
+    </article>
+    <article class="auction-card" data-category="home" data-name="coffee maker">
+      <div class="card-image coffee-bg"><span class="card-badge">HOME PICK</span><div class="coffee-machine"><div class="coffee-top"></div><div class="coffee-body"><div class="coffee-window"></div></div><div class="coffee-base"></div></div><button class="heart" aria-label="Save coffee maker">♡</button></div>
+      <div class="card-content"><div class="card-category">HOME & LIVING</div><h3>Automatic Coffee Maker</h3><div class="card-meta"><span>Demo listing</span><span class="status"><i></i> Preview</span></div><div class="card-bottom"><div><small>Example bid range</small><strong>ETB 10–90</strong></div><button class="btn btn-dark bid-btn" data-product="Automatic Coffee Maker">View auction <span>→</span></button></div></div>
+    </article>
+    <article class="auction-card" data-category="style" data-name="watch">
+      <div class="card-image watch-bg"><span class="card-badge">NEW</span><div class="watch"><div class="watch-strap"></div><div class="watch-face"><div class="watch-hand"></div></div></div><button class="heart" aria-label="Save watch">♡</button></div>
+      <div class="card-content"><div class="card-category">STYLE</div><h3>Classic Wristwatch</h3><div class="card-meta"><span>Demo listing</span><span class="status"><i></i> Preview</span></div><div class="card-bottom"><div><small>Example bid range</small><strong>ETB 5–60</strong></div><button class="btn btn-dark bid-btn" data-product="Classic Wristwatch">View auction <span>→</span></button></div></div>
+    </article>
+  </div>
+  <div class="empty-state" id="emptyState" hidden>No matching auctions. Try another search.</div>
+</section>
+<section class="how-section" id="how"><div class="how-intro"><div class="eyebrow">HOW LUXURYBID COULD WORK</div><h2>Three steps.<br><em>One clear result.</em></h2><p>This concept uses a lowest-unique-bid format. The final rules must be published clearly before real-money bidding starts.</p></div><div class="steps"><div class="step"><span class="step-number">01</span><div><h3>Find your item</h3><p>Browse product listings and check the auction's closing time, bid limits, and participation fee.</p></div><span class="step-arrow">↗</span></div><div class="step"><span class="step-number">02</span><div><h3>Submit a valid bid</h3><p>Choose an allowed amount. A real launch must verify payment and accept the bid on the server.</p></div><span class="step-arrow">↗</span></div><div class="step"><span class="step-number">03</span><div><h3>See the verified result</h3><p>After closing, the server checks which valid bid amount was lowest and submitted by exactly one eligible participant.</p></div><span class="step-arrow">↗</span></div></div></section>
+<section class="trust-section" id="trust"><div class="trust-symbol">✓</div><div><div class="eyebrow">BUILT AROUND CLARITY</div><h2>Rules people can understand.</h2><p>Before launch, LuxuryBid needs published auction terms, privacy protections, customer support, secure account access, and verified payment records.</p></div><a class="btn btn-outline" href="#footer">Launch checklist <span>→</span></a></section>
+<section class="newsletter"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>Want to follow the launch?</h2><p>This preview doesn't send or store your email. The signup feature will be connected after the backend is built.</p></div><form id="notifyForm"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button class="btn btn-lime" type="submit">Notify me <span>→</span></button></form></section>
+</main>
+<footer id="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">E</span><span>Luxury<span class="brand-accent">Bid</span><small>Bid smart. Win fair.</small></span></a><div class="footer-links"><a href="#auctions">Auctions</a><a href="#how">How it works</a><a href="#trust">Trust & safety</a><a href="mailto:hello@example.com">Contact (placeholder)</a></div><div class="footer-bottom"><span>© 2026 LuxuryBid concept preview</span><span>Not a live auction or payment service.</span></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="eyebrow">LUXURYBID PREVIEW</div><h2 id="modalTitle">Auction details</h2><p id="modalMessage">This is a design preview only.</p><div class="modal-info"><strong>Not live yet</strong><span>No bid will be saved and no money will be charged.</span></div><button class="btn btn-dark modal-ok" id="modalOk">Got it</button></section></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
