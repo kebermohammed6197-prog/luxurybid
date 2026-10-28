@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "luxurybid-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-28",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "luxurybid-db",
+      "database_id": "2e5a747b-3c2d-45e1-89d3-2976e307e30a"
+    }
+  ]
+}
